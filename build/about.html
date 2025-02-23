@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F2F6FA] overflow-x-hidden">
+
+    <nav class="xl:px-20 lg:px-10 px-5 2xl:py-12 lg:py-6 py-4">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="img/pilllogo.png" alt="Logo" class="h-10">
+            </div>
+            <div class="hidden lg:flex space-x-14">
+                <ul class="flex xl:space-x-16 space-x-10">
+                    <a href="">
+                    <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Home</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] active cursor-pointer">About</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Device</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer ">FAQs</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Pre-launch</li>
+                </a>
+                </ul>
+            </div>
+            <div class="hidden lg:block">
+                <a href="">
+                    <button class="text-[#293B50] xl:text-lg text-base font-semibold border border-[#293B50] rounded-[20px] py-3 px-6 hover:bg-[#293B50] hover:text-white transition">
+                        <i class="fa-solid fa-heart text-[#293B50]"></i> &nbsp; Pledge now!
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-[#293B50] text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden flex flex-col space-y-4 mt-4 text-center">
+            <ul class="flex flex-col space-y-4 text-[#7A8898]">
+                <a href="">
+                    <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Home</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">About</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Device</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer active">FAQs</li>
+                </a>
+                <a href="">
+                    <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Pre-launch</li>
+                </a>
+    
+            </ul>
+            <a href="">
+                <button class="text-[#293B50] text-lg font-semibold border border-[#293B50] rounded-[20px] py-3 px-6 hover:bg-[#293B50] hover:text-white transition">
+                    <i class="fa-solid fa-heart text-[#293B50]"></i> &nbsp; Pledge now!
+                </button>
+            </a>
+        </div>
+    </nav>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
+
+
+    <hr>
+
+    <section class="xl:pt-20 pt-10 ">
+        <div class="text-center xl:px-20 lg:px-10 px-5">
+            <h1 class="xl:text-[100px] lg:text-7xl md:text-5xl text-4xl text-gradient">Peace of mind, one pill at a time</h1>
+            <h2 class="text-[#293B50] xl:text-[42px] lg:text-3xl text-2xl xl:pt-9 pt-5">Pillgram's intelligent dispenser <span class="text-[#FF0049]">simplifies pill management</span> at home</h2>
+            <p class="xl:text-[26px] txt-lg text-[#7A8898] xl:leading-[46px] leading-8 xl:pt-8 pt-4">Pillgram, an innovative medication management system designed to simplify the process of taking medications. Pillgram combines AI-powered technology, real-time monitoring, and caregiver notifications, providing a seamless solution for those managing medication for chronic conditions such as providing a seamless solution for those managing numerous or complicated medication regimes. The campaign aims to fund the final stages of development, offering early supporters exclusive discounts and other benefits.</p>
+        </div>
+        <div class="2xl:py-16 py-8">
+            <img src="img/heroimg.png" alt="">
+        </div>
+        <div class="xl:px-20 lg:px-10 px-5 text-center">
+            <p class="xl:text-[26px] txt-lg text-[#7A8898] xl:leading-[46px] leading-8 xl:pt-8 pt-4">Pillgram is not just another pill dispenser; it is a comprehensive, AI-assisted medication management solution that integrates with a user-friendly app to provide patients and caregivers peace of mind. The system ensures doses are never missed, tracking and verifying every intake with visual guidance and timed alerts.</p>
+            <p class="xl:text-[26px] txt-lg text-[#7A8898] xl:leading-[46px] leading-8 xl:pt-8 pt-4">Managing medication should be stress-free and reliable. Pillgram offers an easy-to-use, intelligent solution that supports patients and caregivers at every step of the way.</p>
+        </div>
+    </section>
+
+    <section class="xl:py-20 py-10">
+        <div class="bg-[#3F97F7] text-center xl:py-28 py-14 xl:px-20 px-10">
+            <h1 class="text-[#FBFDFF] xl:text-[88px] text-5xl">Why did we make Pillgram?</h1>
+            <p class="xl:text-[57px] text-3xl xl:leading-[90px] leading-70px font-extralight text-[#FBFDFF] xl:pt-7 pt-4">Managing medication  is crucial for well-being, yet it’s increasingly challenging — especially remotely. Pillgram <span class="font-semibold">empowers</span> patients and caregivers by providing the guidance and support        needed to stay on top of <span class="font-semibold">medication routines.</span></p>
+        </div>
+    </section>
+
+
+    <section class="xl:px-20 lg:px-10 px-5 xl:pb-36 pb-16">
+        <div class="flex">
+            <h1 class="xl:text-[78px] text-5xl text-[#293B50]">Our <span class="text-[#FF0049]">Team</span></h1>
+            <div> <hr></div>
+           
+        </div>
+
+        <div class="bg-[#F2F6FA] flex lg:flex-row flex-col items-center border border-[#D0DDEC] lg:rounded-full rounded-[50px] mt-20">
+            <div class="lg:w-1/3 xl:p-5 lg:p-3 p-5 w-full flex justify-center lg:justify-start">
+                <img src="img/jacimg.png" alt="">
+            </div>
+            <div class="lg:w-2/3 w-full">
+                <div class="flex lg:flex-row flex-col gap-2 items-center">
+                    <h1 class="text-[#3F97F7] 2xl:text-2xl text-lg font-semibold">Jacques Amar – CEO</h1>
+                    <h2 class="text-[#293B50] 2xl:text-base text-sm font-semibold">Hardware and Software engineer.</h2>
+                </div>
+                <p class="2xl:text-lg xl:text-base xl:leading-7 text-sm 2xl:leading-9 leading-5 text-[#7A8898] lg:pr-6 lg:text-start text-center p-4 lg:p-0">Jacques has been heading an active engineering firm for the last few decades. A pioneer in web-based solutions for multiple clients excelling in high traffic data-based websites, he has acted as CTO for public and private companies. He combines expertise in software with hardware engineering offering a fully integrated view of the product. He has taken multiple companies through their start-up phase and this is his first experience in actual fund-raising and crowdfunding by himself.</p>
+            </div>
+        </div>
+
+        <div class="bg-[#F2F6FA] flex lg:flex-row flex-col-reverse items-center border border-[#D0DDEC] lg:rounded-full rounded-[50px] mt-10">  
+            <div class="lg:w-2/3 w-full">
+                <div class="flex lg:flex-row flex-col gap-2 items-center pl-10">
+                    <h1 class="text-[#3F97F7] 2xl:text-2xl text-lg font-semibold">Leigh Kaufman Leveen</h1>
+                    <h2 class="text-[#293B50] 2xl:text-base text-sm font-semibold">– Communications.</h2>
+                </div>
+                <p class="2xl:text-lg xl:text-base xl:leading-7 text-sm 2xl:leading-9 leading-5 text-[#7A8898] lg:pl-10 lg:text-start text-center p-4 lg:p-0">Leigh has deep experience working in various marketing environments including film and television companies, higher education and independent expertise in communications for fundraising campaigns.</p>
+            </div>
+
+            <div class="lg:w-1/3 xl:p-5 lg:p-3 p-5 w-full flex justify-center lg:justify-end">
+                <img src="img/leightimg.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-[#D0DDEC] flex lg:flex-row flex-col justify-center lg:justify-start 2xl:gap-72 lg:gap-32 gap-16 2xl:py-20 py-8 xl:px-24 lg:px-10 px-5">
+        
+        <div class="lg:w-1/4 w-full">
+            <img src="img/footerlogo.png" alt="">
+            <div class="flex justify-center md:justify-start space-x-10 2xl:pt-20 lg:pt-16 pt-5">
+                <a href="">
+                <i class="fa-brands fa-square-facebook text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-square-instagram text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-square-github text-[#293B50] text-4xl"></i>
+            </a>
+            </div>
+        </div>
+      
+    
+        <div class=" lg:w-3/4 w-full">
+            <p class="text-[#7A8898] 2xl:text-xl text-sm font-semibold 2xl:leading-8 leading-6 md:text-end text-center">Pillgram is an app-based pill delivery system that ensures medication adherence by engaging patients, caregivers, and medical professionals in the medication process. Our goal is to provide peace of mind and ensure patients receive and take medications as prescribed.</p>
+            <p class="text-[#7A8898] 2xl:text-xl text-sm font-semibold 2xl:leading-8 leading-6 xl:pt-14 lg:pt-6 pt-4 md:text-end text-center">Copyright © 2024 Pillgram and Amar Micro Inc.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
