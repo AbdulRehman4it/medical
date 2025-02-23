@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class=" overflow-x-hidden bg-cover bg-no-repeat bg-center" style="background-image: url(img/faqbg.png);">
+
+  <nav class="xl:px-20 lg:px-10 px-5 2xl:py-12 lg:py-6 py-4">
+    <div class="flex justify-between items-center">
+        <div>
+            <img src="img/pilllogo.png" alt="Logo" class="h-10">
+        </div>
+        <div class="hidden lg:flex space-x-14">
+            <ul class="flex xl:space-x-16 space-x-10">
+                <a href="">
+                <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Home</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">About</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Device</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer active">FAQs</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] 2xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Pre-launch</li>
+            </a>
+            </ul>
+        </div>
+        <div class="hidden lg:block">
+            <a href="">
+                <button class="text-[#293B50] xl:text-lg text-base font-semibold border border-[#293B50] rounded-[20px] py-3 px-6 hover:bg-[#293B50] hover:text-white transition">
+                    <i class="fa-solid fa-heart text-[#293B50]"></i> &nbsp; Pledge now!
+                </button>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="lg:hidden text-[#293B50] text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col space-y-4 mt-4 text-center">
+        <ul class="flex flex-col space-y-4 text-[#7A8898]">
+            <a href="">
+                <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Home</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">About</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Device</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer active">FAQs</li>
+            </a>
+            <a href="">
+                <li class="text-[#7A8898] xl:text-lg text-base font-medium hover:text-[#293B50] cursor-pointer">Pre-launch</li>
+            </a>
+
+        </ul>
+        <a href="">
+            <button class="text-[#293B50] text-lg font-semibold border border-[#293B50] rounded-[20px] py-3 px-6 hover:bg-[#293B50] hover:text-white transition">
+                <i class="fa-solid fa-heart text-[#293B50]"></i> &nbsp; Pledge now!
+            </button>
+        </a>
+    </div>
+</nav>
+
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
+
+    <hr>
+
+    <div class="xl:pt-24 pt-10 2xl:px-20 lg:px-10 px-5">
+        <h1 class="xl:text-[90px] lg:text-6xl text-4xl text-gradient text-center">FAQs about Pillgram</h1>
+    </div>
+    <section class=" 2xl:px-20 lg:px-10 px-5">
+       
+
+        <!-- Faqs  -->
+         <div class="xl:py-20 py-10 xl:space-y-10 space-y-4">
+            <div class="bg-[#F2F6FA] border border-[#D0DDEC] xl:px-20 lg:px-10  px-5 xl:py-12 lg:py-6 py-4 xl:rounded-full lg:rounded-[90px] rounded-[40px]">
+                <h1 class="text-[#293B50] xl:text-[32px] text-2xl">Does Pillgram require online support or monthly fees?</h1>
+                <p class="text-[#7A8898] xl:text-xl xl:leading-9 text-sm leading-7 pt-2">The system is designed to be completely self-sufficient and will continue to work without a subscription. Schedules and information on pills will be uploaded to the device and will not need an internet connection to provide its services. However, you will need internet access in order to alert caretakers or other family members through the app.</p>
+            </div>
+            <div class="bg-[#F2F6FA] border border-[#D0DDEC] xl:px-20 lg:px-10 px-5 xl:py-12 lg:py-6 py-4 xl:rounded-full lg:rounded-[90px] rounded-[30px]">
+                <h1 class="text-[#293B50] xl:text-[32px] text-2xl">What would happen if the distribution system fails or locks up?</h1>
+                <p class="text-[#7A8898] xl:text-xl xl:leading-9 text-sm leading-7 pt-2">Early on in designing Pillgram, we made the deliberate decision to not make it “too mechanical.” We understand that mechanical systems fail, so ours relies more on electronics and lighting cues, ensuring that our devices will continue to work.</p>
+            </div>
+            <div class="bg-[#F2F6FA] border border-[#D0DDEC] xl:px-20 lg:px-10 px-5 xl:py-12 lg:py-6 py-4 xl:rounded-full lg:rounded-[90px] rounded-[30px]">
+                <h1 class="text-[#293B50] xl:text-[32px] text-2xl">Who is this device designed for?</h1>
+                <p class="text-[#7A8898] xl:text-xl xl:leading-9 text-sm leading-7 pt-2">While the common perception is that a device like this is meant for hospices and healthcare workers, Pillgram is designed to accommodate users of all ages and technological backgrounds.</p>
+            </div>
+            <div class="bg-[#F2F6FA] border border-[#D0DDEC] xl:px-20 lg:px-10 px-5 xl:py-12 lg:py-6 py-4 xl:rounded-full lg:rounded-[90px] rounded-[30px]">
+                <h1 class="text-[#293B50] xl:text-[32px] text-2xl">Which languages will Pillgram be available in?</h1>
+                <p class="text-[#7A8898] xl:text-xl xl:leading-9 text-sm leading-7 pt-2">Pillgram will be available in English, Spanish, French and German. Additional languages will be added in future updates, which can be done online.</p>
+            </div>
+            <div class="bg-[#F2F6FA] border border-[#D0DDEC] xl:px-20 lg:px-10 px-5 xl:py-12 lg:py-6 py-4 xl:rounded-full lg:rounded-[90px] rounded-[30px]">
+                <h1 class="text-[#293B50] xl:text-[32px] text-2xl">What if I need more than 2 rows of pills?</h1>
+                <p class="text-[#7A8898] xl:text-xl xl:leading-9 text-sm leading-7 pt-2">We have plans on selling extra rows at $50 MSRP per row and we have discounts in store for our backers.
+                    We already have a pill box that we’re happy with. Why should we use Pillgram?
+                    Our mission is to take away the complexities and stress of taking medication and being in the dark about what you’re taking, why you’re taking them, and when. Pill boxes mainly only solve the “when” part of the problem.
+                    Instead of having a mountain of containers and unidentified pills and wondering if you, or your loved one, took the right medication at the right time, Pillgram not only tracks it for you and your family or caregivers, but it also monitors usage and plugs in critical holes in your, or your loved one’s habits and adherence to taking their medication.
+                    We are here to give you peace of mind, and relieve you of the stress of directly managing your pills.</p>
+            </div>
+         </div>
+    </section>
+
+   
+
+
+
+    <footer class="bg-[#D0DDEC] flex lg:flex-row flex-col justify-center lg:justify-start 2xl:gap-72 lg:gap-32 gap-16 2xl:py-20 py-8 xl:px-24 lg:px-10 px-5">
+        
+        <div class="lg:w-1/4 w-full">
+            <img src="img/footerlogo.png" alt="">
+            <div class="flex justify-center md:justify-start space-x-10 2xl:pt-20 lg:pt-16 pt-5">
+                <a href="">
+                <i class="fa-brands fa-square-facebook text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-square-instagram text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin text-[#293B50] text-4xl"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-square-github text-[#293B50] text-4xl"></i>
+            </a>
+            </div>
+        </div>
+      
+    
+        <div class=" lg:w-3/4 w-full">
+            <p class="text-[#7A8898] 2xl:text-xl text-sm font-semibold 2xl:leading-8 leading-6 md:text-end text-center">Pillgram is an app-based pill delivery system that ensures medication adherence by engaging patients, caregivers, and medical professionals in the medication process. Our goal is to provide peace of mind and ensure patients receive and take medications as prescribed.</p>
+            <p class="text-[#7A8898] 2xl:text-xl text-sm font-semibold 2xl:leading-8 leading-6 xl:pt-14 lg:pt-6 pt-4 md:text-end text-center">Copyright © 2024 Pillgram and Amar Micro Inc.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
